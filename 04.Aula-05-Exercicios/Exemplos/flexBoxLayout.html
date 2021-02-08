@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox</title>
+</head>
+<style>
+    html,body{
+        height: 100%;
+        font-family: calibri;
+    }
+    
+    #linha{
+        display: flex;
+        align-items:stretch;
+        height: 70%;
+    }
+    
+    #a, #b, #c {
+        text-align: center;
+    }
+    
+    #a{
+        background-color: #facfcf;
+    }
+    
+    #b{
+        background-color: #cfe9fa;
+    }
+    
+    #c{
+        background-color: #e3facf;
+    }
+    
+    #a, #c {
+        flex-grow: 1;
+    }
+    
+    #b{
+        flex-grow: 2;
+    }
+    
+    #a, #b, #c  {  
+        flex-basis : 0; 
+    }
+
+</style>
+<body>
+    <h3>Três div (com valores flex-grow diferentes) dentro de uma div contêiner flex</h3>
+    <div id="linha">
+        <div id="a">div1 com flex-grow:1;</div>
+        <div id="b">div2 com flex-grow:2;</div>
+        <div id="c">div3 com flex-grow:1;</div>        
+    </div>
+    <br/><br/><br/>
+</body>
+</html>

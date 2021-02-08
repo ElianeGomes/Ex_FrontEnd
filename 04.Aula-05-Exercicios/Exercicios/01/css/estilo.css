@@ -1,0 +1,118 @@
+body{
+	margin: 0px;
+	border: 0px;
+}
+div,
+img,
+figure,
+td,
+tr,
+table{
+	text-align: center;
+	margin: 0px;
+}
+td,
+tr{
+	margin: 0px;
+	border: 1px solid red;
+}
+table{
+	width: 500px;
+	height: 450px;
+	border: 1px solid;
+	background-color: red;
+}
+td{
+	width: 70px;
+	border: 1px solid red;
+	margin: 0px;
+}
+
+div{
+	width: 500px;
+	margin: auto;
+}
+img{
+	width: 500px;
+}
+figure{
+	width: 500px;
+}
+span{
+	background: blue;
+	display: inline-block;
+	width: 500px;
+	color: #fff;
+}
+.aniversario{
+	display: none;
+}
+.aniversario>img{
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+
+}
+#divAniversario:hover .aniversario{ /*imagem aparece quando mouse passa por cima*/
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+	margin: auto;
+}
+
+.feriadoImg{ /*Deixa a imagem invisivel*/
+	display: none;
+}
+
+
+.feriadoImg>img{ /*Configuração do tamanho da imagem*/
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+}
+
+#finadosId:hover .feriadoImg{ /*imagem aparece quando mouse passa por cima*/
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+	margin: auto;
+}
+
+.prImg{ /*Deixa a imagem invisivel*/
+	display: none;
+}
+
+
+.prImg>img{ /*Configuração do tamanho da imagem*/
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+}
+
+#prId:hover .prImg{ /*imagem aparece quando mouse passa por cima*/
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+	margin: auto;
+}
+#prId,
+#finadosId{
+	background-color: red;
+}
+.um{
+	background-color: #FFE4E1;
+}
+.dois{
+	background-color: #F0E68C;
+}
+.cabecalho{
+	background-color: #FFF8DC;
+	height: 30px;
+}
+.outroMes{
+	background-color: #DCDCDC;
+	color: #A9A9A9;
+}

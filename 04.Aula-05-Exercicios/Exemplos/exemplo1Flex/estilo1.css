@@ -1,0 +1,34 @@
+body {
+    margin: auto;
+}
+
+#main {
+    height: 600px;
+    width: 100%;
+    /* este é o contêiner: */
+    display: flex;
+    flex-direction: column;
+}
+
+#one,
+#two,
+#three,
+#four {
+    width: 25%; height: 100%;
+}
+
+#one {
+    background-color: deepskyblue;
+}
+
+#two {
+    background-color: mediumturquoise;
+}
+
+#three {
+    background-color: paleturquoise;
+}
+
+#four {
+    background-color: lightblue;
+}

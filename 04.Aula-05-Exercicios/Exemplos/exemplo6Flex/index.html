@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 6 com Flexbox</title>
+    <style type="text/css">
+        .flex-container0 {
+            display: flex;
+            padding: 2px;
+            margin: 0;
+            background: #EEE;
+            flex-flow: row nowrap;
+
+            /* justify-content para alinhar itens na horizontal (flex-start, flex-end, space-around, center, space-between): */
+            justify-content: space-around;
+
+            /* align-items para alinhar itens na vertical (center, flex-start, flex-end, stretch, baseline), com relação ao eixo horizontal dos elementos  */
+            align-items: flex-start;
+            
+            /* align-content para alinhar itens na vertical (center, flex-start, flex-end, stretch, baseline). */
+        }
+
+        .flex-container1 {
+            display: flex;
+            padding: 0;
+            margin: 2px;
+            width: 25%;
+            background: lightgray;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .flex-container2 {
+            display: flex;
+            padding: 0;
+            margin: 2px;
+            width: 75%;
+            border: solid 2px lightgray;
+            background: #f4ead9;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-content: flex-start;
+        }
+
+        .flex-item1 {
+            color: white;
+            background: #7c7777;
+            font-size: 0.7em;
+            font-family: 'Calibri';
+            text-align: justify;
+            margin: 4px;
+            padding: 5px;
+        }
+
+        .flex-item2a,
+        .flex-item2b,
+        .flex-item2c {
+            color: black;
+            background: #ffebc5;
+            font-size: 0.9em;
+            font-family: 'Calibri';
+            text-align: justify;
+            margin: 4px;
+            padding: 5px;
+            flex-basis: 0;
+            border: solid 2px #d9d9d9;
+        }
+
+        .flex-item2a {
+            flex-grow: 3;
+        }
+
+        .flex-item2b {
+            flex-grow: 2;
+        }
+
+        .flex-item2c {
+            flex-grow: 1;
+            font-size: 0.7em;
+        }
+        h2 {
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>&nbsp;&nbsp; <img src="gato.jpg" width="5%" /> &nbsp; 
+        Exemplo Flexbox - um contêiner principal e dois internos
+    </h2>
+
+    <div class="flex-container0">
+
+        <article class="flex-container1">
+            <section class="flex-item1"><strong>Lorem Ipsum. </strong>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</section>
+            <section class="flex-item1"><strong>Lorem Ipsum. </strong>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</section>
+            <section class="flex-item1"><strong>Lorem Ipsum. </strong>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</section>
+        </article>
+
+        <article class="flex-container2">
+            <section class="flex-item2a"><strong>Lorem Ipsum</strong> é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker. Elemento com flex-grow: 3;</section>
+            <section class="flex-item2b"><strong>Lorem Ipsum</strong> é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+                <figure>
+                    <img src="gato.jpg" width="70%" />
+                    <figcaption>Um gato</figcaption>
+                </figure>
+                Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Elemento com flex-grow: 2;</section>
+            <section class="flex-item2c"><strong>Lorem Ipsum</strong> é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Elemento com flex-grow: 1;</section>
+        </article>
+
+    </div>
+
+    <br/><br/><br/><br/><br/>
+</body>
+
+</html>

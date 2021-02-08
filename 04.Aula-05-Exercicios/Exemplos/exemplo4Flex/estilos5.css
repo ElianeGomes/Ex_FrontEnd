@@ -1,0 +1,57 @@
+
+h1, h2 {
+    font-family: calibri;
+}
+    
+.meu-flex-container0 {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 550px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  background: #EEE;
+  
+  flex-flow: row wrap;
+  /* alinhar itens na horizontal (flex-start, flex-end, space-around, center, space-between): */
+  justify-content: space-around; 
+  /* alinhar itens na vertical (center, flex-start, flex-end, stretch, baseline): */
+  align-items: center; 
+}
+
+.meu-flex-container1 {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: #e6edd0;
+  -webkit-flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+.meu-flex-container2 {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: #c4e5f4;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.meu-flex-item1 {
+  /* características do texto: */
+  color: white;
+  background: #9f0c0c;
+  font-weight: bold;
+  font-size: 2em;
+  font-family:'Verdana';
+  text-align: center;    
+  /* altura e largura dos itens (blocos): */
+  width: 100px;
+  height: 100px;
+  line-height: 100px; 
+  margin: 10px;
+}

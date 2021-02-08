@@ -1,0 +1,85 @@
+body{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+/*imagem principal*/
+figure{
+	border: 1px solid;
+	width: 350px;
+	margin: 10px 400px;
+	border-radius: 20px;
+	box-shadow: 10px 10px #888888;
+}
+figure>img{
+	width: 350px;
+	border-radius: 20px 20px 0px 0px;
+
+}
+/*formatação café java*/
+h1{
+	display: inline-block;
+	font-size: 40px;
+	margin-top:0px;
+	margin-bottom: 0px;
+}
+/*formatação da distancia*/
+.dist{
+	display: inline-block;
+	margin-left: 90px;
+	font-size: 17px;
+	height: 50px;
+}
+/*imagem de logalização*/
+.dist>img{
+	height: 40px;
+	margin-top: 5px;
+}
+/*Imagem estrelas */
+.estrelas>img{
+	width: 130px;
+
+}
+.estrelas{
+	font-size: 20px;
+}
+h3{
+	font-size: 28px;
+}
+p{
+	font-size: 20px;
+	margin: 13px;
+}/*sexta a domigo formatação*/
+.dias{
+	font-size: 22px;
+	text-align: center;
+}/*formatação div q contem imagem do relogio e horarios*/
+.clockHorario{
+	width: 300px;
+	display:block;
+	height: 60px;
+	margin: 20px;
+	padding: 8px;
+}
+
+
+/*div em q as divs de horarios estão*/
+.horario{
+	width:200px;
+	margin-left: 50px;
+	margin-top: -30px;
+	
+}
+.horario>div{
+	width: 60px;
+	display:inline-block;
+	height: 30px;
+	text-align: center;
+} 
+
+.reserva{
+	text-align: center;
+	font-size: 25px;
+	margin: 20px;
+	color: grey;
+}

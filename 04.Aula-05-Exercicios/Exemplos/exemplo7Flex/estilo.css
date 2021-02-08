@@ -1,0 +1,47 @@
+body {
+    font: 24px Helvetica;
+    background: #000;
+}
+
+*{
+    margin: 4px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+#main {
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row;
+}
+
+#main>article { 
+    background: #dddd88;  
+    /*Atalho para as propriedades flex-grow, flex-shrink e flex-basis*/
+    /*o normal será flex-grow: 0, flex-shrink: 1 e flex-basis: auto*/
+    /*flex-grow: 3, flex-shrink: 1 e flex-basis: 60%*/  
+    /*flex-grow = proporção do container que cada item ocupa*/
+    /*flex-shrink = propriedade para diminuir o item, pode ser 1 (padrao) reduz para caber, (0) não permite reduçao e um número X;*/
+    /*flex-basis = Indica o tamanho inicial do flex item antes da distribuição do espaço restante.*/
+    flex: 3 1 60%;
+    order: 2;
+}
+
+#main>nav {    
+    background: #ccccff;    
+    flex: 1 1 20%;
+    order: 1;
+}
+
+#main>aside {
+    background: #ddddfd;
+    flex: 1 1 20%;
+    order: 3;
+}
+
+header,footer {    
+    height: 80px;    
+    background: #fdf1ce;
+}
