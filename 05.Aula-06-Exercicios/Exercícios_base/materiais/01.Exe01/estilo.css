@@ -1,0 +1,115 @@
+/*@keyframes sombra
+{
+	from {	
+        margin: 5px;
+        border-radius: 10px;		
+		}
+	to {
+        box-shadow: 10px 10px grey;
+        margin: 5px 5px;
+        border-radius: 10px;
+    }
+}
+@-moz-keyframes sombra
+{
+    from {	
+        margin: 5px;
+        border-radius: 10px;		
+		}
+	to {
+        box-shadow: 10px 10px grey;
+        margin: 5px 5px;
+        border-radius: 10px;
+    }
+
+}
+@-webkit-keyframes sombra
+{
+    from {	
+        margin: 5px;
+        border-radius: 10px;		
+		}
+	to {
+        box-shadow: 10px 10px grey;
+        margin: 5px 5px;
+        border-radius: 10px;
+    }
+
+}
+@-o-keyframes sombra
+{
+    from {	
+        margin: 5px;
+        border-radius: 10px;		
+		}
+	to {
+        box-shadow: 10px 10px grey;
+        margin: 5px 5px;
+        border-radius: 10px;
+    }
+
+}*/
+
+section{
+    width: 660px;
+    margin: auto;  
+}
+figure{
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+    border: 0px;
+    display: inline-block;
+}
+.figura{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+figure:hover{
+    animation: sombra 2s;
+	-moz-animation: sombra 2s; /* Firefox */
+	-webkit-animation: sombra 2s; /* Safari e Chrome */
+    -o-animation: sombra 2s; /* Opera */
+}
+.card {
+    height: 150px;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 150px;
+  }
+.card:active {
+    transform: rotateY(180deg);
+  }
+.card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 150px;
+    overflow: hidden;
+    width: 150px;
+  }
+.card.back {
+    background: #eaeaed;
+    color: #0087cc;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+.card:active {
+    transform: rotateY(180deg);
+  }
+  
+
+#figura1{
+      position: absolute;
+}
+#descFig1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: hotpink;
+}
+
+
